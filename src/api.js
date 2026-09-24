@@ -1,4 +1,4 @@
-const DEFAULT_API_BASE_URL = 'http://localhost:3000';
+const DEFAULT_API_BASE_URL = 'https://astromitra-kundliapi.onrender.com';
 
 export function getApiBaseUrl() {
   return localStorage.getItem('astromitra_admin_api_base') || DEFAULT_API_BASE_URL;

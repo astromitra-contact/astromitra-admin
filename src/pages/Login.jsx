@@ -170,7 +170,7 @@ export default function Login() {
             <div style={{ marginTop: 12 }}>
               <div className="field" style={{ marginTop: 4 }}>
                 <label htmlFor="api-base">API base URL</label>
-                <input type="text" id="api-base" placeholder="http://localhost:3000" value={apiBase} onChange={(e) => setApiBase(e.target.value)} />
+                <input type="text" id="api-base" placeholder="https://astromitra-kundliapi.onrender.com" value={apiBase} onChange={(e) => setApiBase(e.target.value)} />
                 <p className="hint">Where this admin panel sends requests. Change this if your backend runs somewhere other than localhost.</p>
               </div>
             </div>
