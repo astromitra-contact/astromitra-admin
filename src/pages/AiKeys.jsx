@@ -152,10 +152,10 @@ export default function AiKeys() {
       }
     >
       <p className="text-secondary mb-16" style={{ maxWidth: 640, fontSize: 13 }}>
-        Gemini keys are always tried first, in priority order, then Groq keys, until one succeeds. A
-        rate-limited or temporarily-unreachable key cools down and is retried later; an invalid key
-        or retired model is deactivated automatically. Keys are shown masked here — the raw value is
-        encrypted in MongoDB and never returned by this API.
+        Keys are tried in strict global priority order (1, 2, 3...) across all providers until one
+        succeeds. A rate-limited or temporarily-unreachable key cools down and is retried later; an
+        invalid key or retired model is deactivated automatically. Keys are shown masked here — the
+        raw value is encrypted in MongoDB and never returned by this API.
       </p>
 
       <div className="toolbar">
